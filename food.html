@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a href="index.html" class="back-button">⬅️ Back to Home</a>
+<button onclick="toggleTheme()" id="themeToggle">🌙 Dark Mode</button>
+
+
+  <h1>Food Gallery</h1>
+
+  <div class="gallery">
+    <img src="images/food/cake.jpg" alt="Cake" />
+    <img src="images/food/pancake.jpg" alt="Pancake" />
+    <img src="images/food/22.jpg" alt="22 Dish" />
+    <img src="images/food/33.jpg" alt="33 Dish" />
+    <img src="images/food/111.jpg" alt="111 Dish" />
+  </div>
+
+  <!-- ✅ Modal HTML with arrows -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <span class="arrow left">&#10094;</span>
+    <img class="modal-content" id="modal-img" />
+    <span class="arrow right">&#10095;</span>
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

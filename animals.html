@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animals Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="index.html" class="back-button">⬅️ Back to Home</a>
+  <button onclick="toggleTheme()" id="themeToggle">🌙 Dark Mode</button>
+
+
+  <h1>Animals Gallery</h1>
+
+  <div class="gallery">
+    <img src="images/animals/deer.jpeg" alt="Deer" />
+    <img src="images/animals/giraffe.jpeg" alt="Giraffe" />
+    <img src="images/animals/rabbit.jpg" alt="Rabbit" />
+    <img src="images/animals/squirrel.jpeg" alt="Squirrel" />
+    <img src="images/animals/tiger.jpeg" alt="Tiger" />
+  </div>
+
+  <!-- Modal with navigation arrows -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <span class="arrow left">&#10094;</span>
+    <img class="modal-content" id="modal-img" />
+    <span class="arrow right">&#10095;</span>
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

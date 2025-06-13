@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birds Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a href="index.html" class="back-button">⬅️ Back to Home</a>
+<button onclick="toggleTheme()" id="themeToggle">🌙 Dark Mode</button>
+
+
+  <h1>Birds Gallery</h1>
+
+  <div class="gallery">
+    <img src="images/birds/1.jpeg" alt="Bird 1" />
+    <img src="images/birds/parrot.jpeg" alt="Parrot" />
+    <img src="images/birds/peacock.jpeg" alt="Peacock" />
+    <img src="images/birds/pigeon.jpeg" alt="Pigeon" />
+  </div>
+
+  <!-- Modal with navigation arrows -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <span class="arrow left">&#10094;</span>
+    <img class="modal-content" id="modal-img" />
+    <span class="arrow right">&#10095;</span>
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
