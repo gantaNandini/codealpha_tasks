@@ -3,26 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Image Gallery Home</title>
+  <title>Modern Music Player</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="home-page">
-<button onclick="toggleTheme()" id="themeToggle">🌙 Dark Mode</button>
-
-  <h1>Explore My Gallery</h1>
-
-  <div class="category-container">
-    <a href="food.html" class="category-card food-card">
-      <span>🍽️ Food</span>
-    </a>
-    <a href="animals.html" class="category-card animals-card">
-      <span>🐯 Animals</span>
-    </a>
-    <a href="birds.html" class="category-card birds-card">
-      <span>🐦 Birds</span>
-    </a>
+<body>
+  <div class="theme-toggle">
+    <button id="themeBtn">Toggle Theme</button>
   </div>
+  <div class="container">
+    <h1>Music Player</h1>
+    <div class="player">
+      <img id="cover" src="covers/cover1.jpg" alt="Album Art" />
+      <h2 id="title">Kumkumala</h2>
+      <p id="artist">Pritam, Sid Sriram</p>
+      <audio id="audio" src="songs/song1.mp3"></audio>
 
+      <div class="progress-container">
+        <span id="current-time">0:00</span>
+        <input type="range" id="progress" value="0" />
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="prev">&#9664;</button>
+        <button id="play">&#9658;</button>
+        <button id="next">&#9654;</button>
+        <a id="download" href="songs/song1.mp3" download>
+          <button title="Download">&#8681;</button>
+        </a>
+      </div>
+    </div>
+     <ul id="playlist">
+  <li data-src="music/Kathakaadhey - Anirudh Ravichander, Ajesh, Srinidhi Venkatesh.m4a" data-cover="images/Kathakaadhey - Anirudh Ravichander, Ajesh, Srinidhi Venkatesh.jpeg">
+    Kathakaadhey - Anirudh Ravichander
+  </li>
+  <li data-src="music/Kola Kalle Ilaa - Sid Sriram.m4a" data-cover="images/Kola Kalle Ilaa - Sid Sriram.jpeg">
+    Kola Kalle Ilaa - Sid Sriram
+  </li>
+  <li data-src="music/Kollagottey - Anirudh Ravichander.m4a" data-cover="images/Kollagottey - Anirudh Ravichander.jpeg">
+    Kollagottey - Anirudh Ravichander
+  </li>
+  <li data-src="music/Kumkumala - Pritam, Sid Sriram.m4a" data-cover="images/Kumkumala - Pritam, Sid Sriram.jpg">
+    Kumkumala - Pritam, Sid Sriram
+  </li>
+  <li data-src="music/Love Selfie - Anirudh Ravichander, Nakash Aziz.m4a" data-cover="images/Love Selfie - Anirudh Ravichander.jpeg">
+    Love Selfie - Anirudh Ravichander
+  </li>
+  <li data-src="music/Mastaaru Mastaaru - GV Prakash Kumar, Shweta Mohan.m4a" data-cover="images/Mastaaru Mastaaru - GV Prakash Kumar.jpeg">
+    Mastaaru Mastaaru - GV Prakash Kumar
+  </li>
+<li data-src="music/Naa Kanulu Yepudu - Sid Sriram.m4a">Naa Kanulu Yepudu - Sid Sriram</li>
+      <li data-src="music/Nee Paata Madhuram - Anirudh Ravichander, Shreya Ghoshal.m4a">Nee Paata Madhuram</li>
+      <li data-src="music/Nenu Nuvvantu - Orange Movie.mp3">Nenu Nuvvantu - Orange Movie</li>
+      <li data-src="music/Ninnu Chuse Anandamlo - Anirudh Ravichander, Sid Sriram.m4a">Ninnu Chuse Anandamlo - Anirudh Ravichander</li>
+      <li data-src="music/O Kalala Kathala - Sathyaprakash D, Chinmayi Sripada.m4a">Kalala Kathala - Sathyaprakash D</li>
+      <li data-src="music/O Rendu Prema Meghaalila - Vijai Bulganin, Sreerama Chandra.m4a">Rendu Prema Meghaalila</li>
+      <li data-src="music/Oh Sita Hey Rama - Vishal Chandrashekhar, SPB Charan, Ramya Behara.m4a">Oh Sita Hey Rama</li>
+      <li data-src="music/Perfect (Acoustic) - Ed Sheeran.m4a">Perfect (Acoustic) - Ed Sheeran</li>
+      <li data-src="music/Po Ve Po - Anirudh Ravichander, Mohit Chauhan.m4a">Po Ve Po - Anirudh Ravichander</li>
+      <li data-src="music/Prema O Premaa - Sid Sriram, Hemambika.m4a">Prema O Premaa - Sid Sriram</li>
+      <li data-src="music/Teliyade Teliyade - Sid Sriram, Aditi Bhavaraju.m4a">Teliyade Teliyade - Sid Sriram</li>
+      <li data-src="music/Tum Hi Ho - Black Screen Status.mp3">Tum Hi Ho (Status)</li>
+      <li data-src="music/Urimena - Priyesh Mothukuri, Raazi.m4a">Urimena - Priyesh Mothukuri</li>
+      <li data-src="music/Vinave Vinave - GV Prakash Kumar, Shakthisree Gopalan.m4a">Vinave Vinave</li>
+      <li data-src="music/Yedhalo Oka Mounam - Anirudh Ravichander, Ajesh.m4a">Yedhalo Oka Mounam</li>
+    </ul>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
